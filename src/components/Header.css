@@ -1,0 +1,32 @@
+.Header {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+  
+.Header-title {
+    font-size: 1.5em;
+}
+  
+.Header-navigation {
+    padding: 0;
+    list-style: none;
+}
+
+.Header-navigation li {
+    display: inline-block;
+}
+
+.Header-navigation li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.Header-navigation a {
+    text-decoration: none;
+    color: #fefefe;    
+}
+
+.Header-navigation a:hover {
+    color: #ddd;
+}

@@ -1,0 +1,26 @@
+.Home-intro {
+  font-size: large;
+}
+
+.Home-books-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Home-book {
+  margin: 8px;
+  flex: 0 1 calc(20% - 16px);
+}
+
+.Home-book-image {
+  max-width: 100%; 
+  height: 175px;
+}
+
+.Home-book-title {
+  font-size: 14px;
+  max-width: 200px;
+}

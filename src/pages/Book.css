@@ -1,0 +1,43 @@
+.Book-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Book-categories {
+    color: #666;
+    margin: .5rem 0;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #cacaca;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.Book-categories li {
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 0.6rem;
+    border: 0;
+    margin: 0;
+}
+
+.Book-info {
+    display: flex;
+}
+
+.Book-image {
+    flex: 3;
+    text-align: center;
+}
+
+.Book-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Book-details {
+    flex: 5;
+    padding: 0 1.5rem;
+}

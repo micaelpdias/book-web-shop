@@ -1,0 +1,136 @@
+.SearchBar {
+    display: inline-block;
+    position: relative;
+    width: 380px;
+    height: 45px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 16px;  
+}
+
+.SearchBar-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.SearchBar-input {
+    display: inline-block;
+    transition: box-shadow .4s ease, background .4s ease;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #444444;
+    background: #F5F8FA;
+    padding: 0;
+    padding-right: 66px;
+    padding-left: 12px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    white-space: normal;
+    font-size: inherit;
+    appearance: none;
+}
+
+.SearchBar-input::-webkit-search-decoration, .SearchBar-input::-webkit-search-cancel-button, .SearchBar-input::-webkit-search-results-button, .SearchBar-input::-webkit-search-results-decoration {
+    display: none;
+}    
+
+.SearchBar-input:hover {
+    box-shadow: inset 0 0 0 1px #2b2b2b;
+}
+  
+.SearchBar-input:focus, 
+.SearchBar-input:active {
+    outline: 0;
+    box-shadow: inset 0 0 0 1px #000000;
+    background: #FFFFFF;
+}
+  
+.SearchBar-input::placeholder {
+    color: #BBBBBB;
+}
+
+.SearchBar-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: inherit;
+    margin: 0;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    width: 45px;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: inherit;
+    user-select: none;
+}
+  
+.SearchBar-submit::before {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+  
+.SearchBar-submit:hover, 
+.SearchBar-submit:active {
+    cursor: pointer;
+}
+  
+.SearchBar-submit:focus {
+    outline: 0;
+}
+  
+.SearchBar-submit svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    fill: #505050;
+}
+
+.SearchBar-reset {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 45px;
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    user-select: none;
+    fill: rgba(0, 0, 0, 0.5);
+}
+  
+.SearchBar-reset:focus {
+    outline: 0;
+}
+  
+.SearchBar-reset svg {
+    display: block;
+    margin: 4px;
+    width: 13px;
+    height: 13px;
+}
+  
+.SearchBar-input:valid ~ .SearchBar-reset {
+    display: block;
+    animation-name: sbx-reset-in;
+    animation-duration: .15s;
+}
+  
+@keyframes sbx-reset-in {
+    0% {
+      transform: translate3d(-20%, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+}
