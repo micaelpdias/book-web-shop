@@ -10,9 +10,9 @@ import './index.css';
 ReactDOM.render(
     <Router>
         <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/books/:id" component={Book} />
-            <Route path="/cart" component={Cart} />
+            <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+            <Route path={`${process.env.PUBLIC_URL}/books/:id`} component={Book} />
+            <Route path={`${process.env.PUBLIC_URL}/cart`} component={Cart} />
         </Switch>
     </Router>, 
     document.getElementById('root')
